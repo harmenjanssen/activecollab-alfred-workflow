@@ -1,0 +1,104 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "b79bef1b17812880f11058d6036d815f",
+    "content-hash": "175774aa0ce0db686a75880be5aaac09",
+    "packages": [
+        {
+            "name": "activecollab/activecollab-feather-sdk",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/activecollab/activecollab-feather-sdk.git",
+                "reference": "7dd0e48e1b8ab9550eeca942ffdab2350dd7b5a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/activecollab/activecollab-feather-sdk/zipball/7dd0e48e1b8ab9550eeca942ffdab2350dd7b5a4",
+                "reference": "7dd0e48e1b8ab9550eeca942ffdab2350dd7b5a4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ActiveCollab\\SDK\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ilija Studen",
+                    "email": "ilija.studen@gmail.com"
+                }
+            ],
+            "description": "This is a simple PHP library that makes communication with Active Collab API easy",
+            "homepage": "https://github.com/activecollab/activecollab-feather-sdk",
+            "keywords": [
+                "activecollab",
+                "api",
+                "sdk"
+            ],
+            "time": "2016-06-17 14:56:18"
+        },
+        {
+            "name": "joetannenbaum/alfred-workflow",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joetannenbaum/alfred-workflow.git",
+                "reference": "2fef46b2f5368b8fb9793712b1b438163b2851bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joetannenbaum/alfred-workflow/zipball/2fef46b2f5368b8fb9793712b1b438163b2851bf",
+                "reference": "2fef46b2f5368b8fb9793712b1b438163b2851bf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.3|~4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Alfred\\Workflows\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Tannenbaum",
+                    "email": "joe@joe.codes"
+                }
+            ],
+            "description": "PHP helper for creating Alfred Workflows.",
+            "time": "2016-05-19 20:46:01"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

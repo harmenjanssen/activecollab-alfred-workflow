@@ -1,0 +1,20 @@
+{
+    "name": "Alfred ActiveCollab Workflow",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Harmen Janssen",
+            "email": "harmen@whatstyle.net"
+        }
+    ],
+    "keywords": ["activecollab", "api", "alfred"],
+    "require": {
+        "joetannenbaum/alfred-workflow": "^0.1.0",
+        "activecollab/activecollab-feather-sdk": "3.1.0"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php hack-ac-for-php55.php"
+        ]
+    }
+}
