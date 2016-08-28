@@ -6,7 +6,7 @@ Quickly jump to a project in ActiveCollab.
 
 Grab the `.alfredworkflow` file or symlink this stuff if you wish to work or debug on it.   
 I use the awesome `install-workflow.py` from @deanishe. 
-See (https://gist.github.com/deanishe/35faae3e7f89f629a94e)[https://gist.github.com/deanishe/35faae3e7f89f629a94e].   
+See [https://gist.github.com/deanishe/35faae3e7f89f629a94e](https://gist.github.com/deanishe/35faae3e7f89f629a94e).   
 Use like this:
 
 ```bash
