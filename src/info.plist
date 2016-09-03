@@ -36,7 +36,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string></string>
+	<string>Harmen Janssen</string>
 	<key>description</key>
 	<string>Quickly jump to AC projects from Alfred</string>
 	<key>disabled</key>
@@ -199,8 +199,8 @@ php ./workflow.php "$query" $AC_USERNAME $AC_PASSWORD $AC_ORG_NAME $AC_SELFHOSTE
 		<string></string>
 	</dict>
 	<key>version</key>
-	<string></string>
+	<string>1.0.0</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>www.whatstyle.net</string>
 </dict>
 </plist>
