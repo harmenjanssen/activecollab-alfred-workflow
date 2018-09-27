@@ -1,11 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "b79bef1b17812880f11058d6036d815f",
-    "content-hash": "175774aa0ce0db686a75880be5aaac09",
+    "content-hash": "685db5847fad41aa174b76f948c5cc4c",
     "packages": [
         {
             "name": "activecollab/activecollab-feather-sdk",
@@ -51,7 +50,7 @@
                 "api",
                 "sdk"
             ],
-            "time": "2016-06-17 14:56:18"
+            "time": "2016-06-17T14:56:18+00:00"
         },
         {
             "name": "joetannenbaum/alfred-workflow",
@@ -90,7 +89,51 @@
                 }
             ],
             "description": "PHP helper for creating Alfred Workflows.",
-            "time": "2016-05-19 20:46:01"
+            "time": "2016-05-19T20:46:01+00:00"
+        },
+        {
+            "name": "luzzardi/cf-property-list",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/luzzardi/cf-propertylist.git",
+                "reference": "c394fa6fcebb1d96e606c952fc3cfcd8b3f219aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/luzzardi/cf-propertylist/zipball/c394fa6fcebb1d96e606c952fc3cfcd8b3f219aa",
+                "reference": "c394fa6fcebb1d96e606c952fc3cfcd8b3f219aa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "eher/phpunit": ">=1.2",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "CFPropertyList": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ronhill",
+                    "email": "ronhill.ilya@gmail.com"
+                }
+            ],
+            "description": "Work with plist (read , write , read binary plist , write binary plist)",
+            "homepage": "https://github.com/luzzardi/cf-propertylist",
+            "keywords": [
+                "plist"
+            ],
+            "time": "2014-02-14T17:19:52+00:00"
         }
     ],
     "packages-dev": [],

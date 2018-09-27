@@ -10,6 +10,7 @@
     "keywords": ["activecollab", "api", "alfred"],
     "require": {
         "joetannenbaum/alfred-workflow": "^0.1.0",
-        "activecollab/activecollab-feather-sdk": "3.1.0"
+        "activecollab/activecollab-feather-sdk": "3.1.0",
+        "luzzardi/cf-property-list": "^1.1"
     }
 }

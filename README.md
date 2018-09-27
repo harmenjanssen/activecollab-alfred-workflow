@@ -5,12 +5,10 @@ Quickly jump to a project in ActiveCollab.
 ## Installation
 
 Grab the `.alfredworkflow` file or symlink this stuff if you wish to work or debug on it.   
-I use the awesome `install-workflow.py` from @deanishe. 
-See [https://gist.github.com/deanishe/35faae3e7f89f629a94e](https://gist.github.com/deanishe/35faae3e7f89f629a94e).   
-Use like this:
+Symlink the workflow by running:
 
 ```bash
-workflow-install -s src
+php link.php
 ```
 
 ## Setup 
@@ -26,7 +24,16 @@ Search for projects with the prefix `ac`. For example:
 ac github
 ```
 
-Note that the first time it might be a little slow since it's fetching live results from
+By hitting Enter you will be redirected to the project page.  
+Hitting Tab, however, will start searching tasks within the project, in the format:
+
+```
+ac github > my task
+```
+
+Note: fully numeric task queries will search **task_number** instead of task name.
+
+Note: the first time it might be a little slow since it's fetching live results from
 ActiveCollab, but subsequent calls are cached.  
 Which brings us to the following:
 
