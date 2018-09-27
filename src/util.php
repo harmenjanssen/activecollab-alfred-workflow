@@ -1,4 +1,9 @@
 <?php
+class WorkflowException extends \Exception {
+    public $subtitle = '';
+    public $uid = '';
+}
+
 function writeCache($key, $data) {
     file_put_contents(WORKFLOW_ROOT . "/cache/$key", serialize($data));
 }
@@ -83,6 +88,35 @@ function filterProjects($projects, $query) {
     });
 }
 
+function getProjectId($token, $projectName) {
+    $projects = getProjects($token);
+    $matches = array_filter($projects, function ($proj) use ($projectName) {
+        return $projectName === $proj['name'];
+    });
+    return current($matches)['id'] ?? 0;
+}
+
+function getTasks($token, $id) {
+    $client = new \ActiveCollab\SDK\Client($token);
+    return json_decode($client->get("projects/{$id}/tasks")->getBody(), true)['tasks'] ?? [];
+}
+
+function filterTasks($tasks, $query) {
+    return array_filter($tasks, function ($task) use ($query) {
+        if (is_numeric($query)) {
+            return fuzzyMatch($query, $task['task_number']);
+        }
+        return fuzzyMatch($query, $task['name']);
+    });
+}
+
+function halt($uid, $message, $subtitle = '') {
+    $exception = new WorkflowException($message);
+    $exception->uid = $uid;
+    $exception->subtitle = $subtitle;
+    throw $exception;
+}
+
 /**
  * Matches when the chars of $search appear in the same order in $check.
  */
@@ -102,4 +136,5 @@ function fuzzyMatch($search, $check, $caseInsensitive = true) {
     }
     return true;
 }
+
 
