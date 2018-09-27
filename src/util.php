@@ -5,6 +5,9 @@ class WorkflowException extends \Exception {
 }
 
 function writeCache($key, $data) {
+    if (!file_exists(WORKFLOW_ROOT . '/cache')) {
+        mkdir(WORKFLOW_ROOT . '/cache');
+    }
     file_put_contents(WORKFLOW_ROOT . "/cache/$key", serialize($data));
 }
 
@@ -13,10 +16,6 @@ function readCache($key) {
         return unserialize(file_get_contents(WORKFLOW_ROOT . "/cache/$key"));
     }
     return null;
-}
-
-function clearCache() {
-
 }
 
 function getVarMap() {

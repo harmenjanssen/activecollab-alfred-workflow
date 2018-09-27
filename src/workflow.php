@@ -5,7 +5,7 @@
  * @author Harmen Janssen <harmen@whatstyle.net>
  */
 define('WORKFLOW_ROOT', dirname(__FILE__));
-require_once WORKFLOW_ROOT . '/vendor/autoload.php';
+require_once WORKFLOW_ROOT . '/../vendor/autoload.php';
 require_once WORKFLOW_ROOT . '/util.php';
 
 $workflow = new Alfred\Workflows\Workflow;
@@ -68,7 +68,7 @@ try {
             $workflow->result()
                      ->uid($task['id'])
                      ->title($task['name'])
-                     ->subtitle('bananarama')
+                     ->subtitle('#' . $task['task_number'])
                      ->autocomplete($id . ' > ' . $task['name'])
                      ->type('default')
                      ->valid(true)
