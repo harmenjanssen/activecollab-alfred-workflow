@@ -22,4 +22,4 @@ if (!$syncfolder) {
 }
 
 $target = str_replace('~', getenv('HOME'), $syncfolder) . '/Alfred.alfredpreferences/workflows';
-symlink(realpath('./src'), $target . '/net.whatstyle.activecollab');
+symlink(realpath('./'), $target . '/net.whatstyle.activecollab');
