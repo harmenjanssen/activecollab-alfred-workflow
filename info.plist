@@ -202,6 +202,13 @@ php ./workflow.php "$query" $AC_USERNAME $AC_PASSWORD $AC_ORG_NAME $AC_SELFHOSTE
 		<key>AC_USERNAME</key>
 		<string></string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>AC_SELFHOSTED_URL</string>
+		<string>AC_ORG_NAME</string>
+		<string>AC_USERNAME</string>
+		<string>AC_PASSWORD</string>
+	</array>
 	<key>version</key>
 	<string>1.0.0</string>
 	<key>webaddress</key>
