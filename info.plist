@@ -52,6 +52,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -73,7 +75,7 @@
 				<key>script</key>
 				<string>query=$1
 
-php ./workflow.php "$query" $AC_USERNAME $AC_PASSWORD $AC_ORG_NAME $AC_SELFHOSTED_URL</string>
+/usr/local/bin/php ./workflow.php "$query" $AC_USERNAME $AC_PASSWORD $AC_ORG_NAME $AC_SELFHOSTED_URL</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -92,7 +94,7 @@ php ./workflow.php "$query" $AC_USERNAME $AC_PASSWORD $AC_ORG_NAME $AC_SELFHOSTE
 			<key>uid</key>
 			<string>6AE49B94-FC56-43F9-A135-2E743215A3B6</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
