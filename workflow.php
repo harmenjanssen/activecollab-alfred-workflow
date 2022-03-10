@@ -69,7 +69,7 @@ try {
                      ->uid($task['id'])
                      ->title($task['name'])
                      ->subtitle('#' . $task['task_number'])
-                     ->autocomplete($id . ' > ' . $task['name'])
+                     ->autocomplete($task['id'] . ' > ' . $task['name'])
                      ->type('default')
                      ->valid(true)
                      ->arg(
