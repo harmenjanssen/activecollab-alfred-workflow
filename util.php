@@ -4,17 +4,24 @@ class WorkflowException extends \Exception {
     public $uid = '';
 }
 
+function writeLog($message) {
+    file_put_contents(WORKFLOW_ROOT . '/activecollab.log', $message . PHP_EOL, FILE_APPEND);
+}
+
 function writeCache($key, $data) {
     if (!file_exists(WORKFLOW_ROOT . '/cache')) {
         mkdir(WORKFLOW_ROOT . '/cache');
     }
+    writeLog("Writing cache for $key");
     file_put_contents(WORKFLOW_ROOT . "/cache/$key", serialize($data));
 }
 
 function readCache($key) {
     if (file_exists(WORKFLOW_ROOT . "/cache/$key")) {
+        writeLog("Found cache for $key");
         return unserialize(file_get_contents(WORKFLOW_ROOT . "/cache/$key"));
     }
+    writeLog("No cache found for $key");
     return null;
 }
 

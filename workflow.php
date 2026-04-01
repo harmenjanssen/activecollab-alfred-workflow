@@ -4,9 +4,8 @@
  *
  * @author Harmen Janssen <harmen@whatstyle.net>
  */
-define('WORKFLOW_ROOT', dirname(__FILE__));
-require_once WORKFLOW_ROOT . '/vendor/autoload.php';
-require_once WORKFLOW_ROOT . '/util.php';
+require_once './vendor/autoload.php';
+require_once './util.php';
 
 $workflow = new Alfred\Workflows\Workflow;
 
@@ -84,6 +83,7 @@ try {
              ->subtitle($e->subtitle)
              ->valid(false);
 } catch (Exception $e) {
+    throw $e;
     $workflow->result()
              ->valid(false)
              ->title('Unknown error')
