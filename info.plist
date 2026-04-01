@@ -75,7 +75,7 @@
 				<key>script</key>
 				<string>query=$1
 
-/usr/local/bin/php ./workflow.php "$query" $AC_USERNAME $AC_PASSWORD $AC_ORG_NAME $AC_SELFHOSTED_URL</string>
+php ./workflow.php "$query" $AC_USERNAME $AC_PASSWORD $AC_ORG_NAME $AC_SELFHOSTED_URL</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -101,12 +101,14 @@
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -167,32 +169,34 @@
 		<key>200F3700-B750-43C3-A7FC-1142802386DD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>520</integer>
+			<real>520</real>
 			<key>ypos</key>
-			<integer>100</integer>
+			<real>100</real>
 		</dict>
 		<key>247B9E6D-0828-405A-9A80-C909D580AF04</key>
 		<dict>
 			<key>xpos</key>
-			<integer>520</integer>
+			<real>520</real>
 			<key>ypos</key>
-			<integer>240</integer>
+			<real>240</real>
 		</dict>
 		<key>6AE49B94-FC56-43F9-A135-2E743215A3B6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>240</integer>
+			<real>240</real>
 			<key>ypos</key>
-			<integer>100</integer>
+			<real>100</real>
 		</dict>
 		<key>E2C39EB2-75BD-4DED-81DC-4A01B3BFEAA9</key>
 		<dict>
 			<key>xpos</key>
-			<integer>240</integer>
+			<real>240</real>
 			<key>ypos</key>
-			<integer>240</integer>
+			<real>240</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>AC_ORG_NAME</key>
