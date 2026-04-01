@@ -4,6 +4,7 @@
  *
  * @author Harmen Janssen <harmen@whatstyle.net>
  */
+define('WORKFLOW_ROOT', __DIR__);
 require_once './vendor/autoload.php';
 require_once './util.php';
 
