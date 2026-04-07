@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "685db5847fad41aa174b76f948c5cc4c",
+    "content-hash": "0ee6aa6a3fc04b8832431fad7eae60c7",
     "packages": [
         {
             "name": "activecollab/activecollab-feather-sdk",
@@ -50,27 +50,31 @@
                 "api",
                 "sdk"
             ],
+            "support": {
+                "issues": "https://github.com/activecollab/activecollab-feather-sdk/issues",
+                "source": "https://github.com/activecollab/activecollab-feather-sdk/tree/master"
+            },
             "time": "2016-06-17T14:56:18+00:00"
         },
         {
             "name": "joetannenbaum/alfred-workflow",
-            "version": "0.1.0",
+            "version": "0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joetannenbaum/alfred-workflow.git",
-                "reference": "2fef46b2f5368b8fb9793712b1b438163b2851bf"
+                "reference": "8e5f3bff6fee00306fe8d2cada4e92100e818762"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joetannenbaum/alfred-workflow/zipball/2fef46b2f5368b8fb9793712b1b438163b2851bf",
-                "reference": "2fef46b2f5368b8fb9793712b1b438163b2851bf",
+                "url": "https://api.github.com/repos/joetannenbaum/alfred-workflow/zipball/8e5f3bff6fee00306fe8d2cada4e92100e818762",
+                "reference": "8e5f3bff6fee00306fe8d2cada4e92100e818762",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "php": "^7.4.0||^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.3|~4.8"
+                "phpunit/phpunit": "^9.5"
             },
             "type": "library",
             "autoload": {
@@ -89,7 +93,12 @@
                 }
             ],
             "description": "PHP helper for creating Alfred Workflows.",
-            "time": "2016-05-19T20:46:01+00:00"
+            "homepage": "https://joe.codes",
+            "support": {
+                "issues": "https://github.com/joetannenbaum/alfred-workflow/issues",
+                "source": "https://github.com/joetannenbaum/alfred-workflow"
+            },
+            "time": "2022-08-02T18:48:11+00:00"
         },
         {
             "name": "luzzardi/cf-property-list",
@@ -133,15 +142,20 @@
             "keywords": [
                 "plist"
             ],
+            "support": {
+                "issues": "https://github.com/luzzardi/cf-propertylist/issues",
+                "source": "https://github.com/luzzardi/cf-propertylist/tree/master"
+            },
             "time": "2014-02-14T17:19:52+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": []
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
 }
