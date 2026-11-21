@@ -4,6 +4,9 @@
  *
  * @author Harmen Janssen <harmen@whatstyle.net>
  */
+// Keep PHP notices out of stdout, Alfred expects pure JSON there.
+ini_set('display_errors', 'stderr');
+
 define('WORKFLOW_ROOT', __DIR__);
 require_once './vendor/autoload.php';
 require_once './util.php';
